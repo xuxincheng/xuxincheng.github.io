@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://xuxincheng.github.io/sitemap.xml

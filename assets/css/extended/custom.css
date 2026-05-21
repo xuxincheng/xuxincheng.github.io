@@ -1,0 +1,29 @@
+/* 收紧首页 profile/home-info 区域与下方文章列表之间的间距 */
+
+/* 隐藏空的首页标题（h1）—— 当 homeInfoParams.Title 为空时不占位 */
+.first-entry header.entry-header h1:empty {
+    display: none;
+}
+
+/* 缩小 home-info 区块本身的内/外边距 */
+.first-entry {
+    min-height: auto !important;
+    padding: 24px 0 !important;
+    margin-bottom: 12px !important;
+}
+
+/* 标题与正文之间的间距 */
+.first-entry header.entry-header {
+    margin-bottom: 0;
+}
+
+/* 简介中两段文字之间的间距收紧 */
+.first-entry .entry-content p {
+    margin: 0.4em 0;
+}
+
+/* 简介区底部不再有 social icons，移除其残留留白 */
+.first-entry .social-icons {
+    margin-top: 0;
+    padding-top: 0;
+}

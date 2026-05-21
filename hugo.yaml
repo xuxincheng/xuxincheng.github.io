@@ -1,0 +1,113 @@
+baseURL: "https://xuxincheng.github.io/"
+title: XU's Blog
+languageCode: en-us
+defaultContentLanguage: en
+theme: PaperMod
+paginate: 10
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+enableInlineShortcodes: true
+
+# GitHub Pages 用户站默认站点 URL，无需子路径
+# 输出格式：仅 HTML 与 RSS（站点底层 RSS 仍可用，但首页不再展示 RSS 图标）
+outputs:
+  home:
+    - HTML
+    - RSS
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: XU's Blog
+  description: "Notes on AI, LLM, Deep Learning, management, finance, life, philosophy, and whatever else catches my attention."
+  keywords: [Blog, AI, LLM, Deep Learning, Management, Finance, Life, Philosophy]
+  author: Xincheng XU
+  defaultTheme: auto # auto / light / dark
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  ShowToc: true
+  TocOpen: false
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+
+  math: true # 启用数学公式（KaTeX）
+
+  assets:
+    disableHLJS: false
+    disableFingerprinting: false
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    safari_pinned_tab: "/safari-pinned-tab.svg"
+
+  label:
+    text: "XU's Blog"
+    icon: /favicon.ico
+    iconHeight: 35
+
+  # 首页：使用 profileMode（与 lilianweng 风格一致：作者简介 + 文章列表）
+  homeInfoParams:
+    Content: >
+      Notes on AI, LLM, deep learning, management, finance, life, philosophy —
+      and whatever else catches my attention along the way.
+
+      Most posts are long-form deep dives — written for myself first, shared in case they help others.
+
+  editPost:
+    URL: "https://github.com/xuxincheng/xuxincheng.github.io/tree/main/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
+# 菜单：Posts / Tags / Categories
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 30
+
+# 代码高亮配置
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: false
+    style: monokai
+
+# 分类法
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
