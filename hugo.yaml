@@ -90,10 +90,6 @@ menu:
       name: Tags
       url: /tags/
       weight: 20
-    - identifier: categories
-      name: Categories
-      url: /categories/
-      weight: 30
 
 # 代码高亮配置
 markup:
@@ -107,8 +103,6 @@ markup:
     lineNos: false
     style: monokai
 
-# 分类法
+# 分类法（仅启用 tags）
 taxonomies:
-  category: categories
   tag: tags
-  series: series
