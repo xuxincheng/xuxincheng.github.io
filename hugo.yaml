@@ -33,7 +33,7 @@ params:
   disableThemeToggle: false
 
   ShowReadingTime: true
-  ShowShareButtons: true
+  ShowShareButtons: false
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
@@ -55,16 +55,9 @@ params:
   assets:
     disableHLJS: false
     disableFingerprinting: false
-    favicon: "/favicon.ico"
-    favicon16x16: "/favicon-16x16.png"
-    favicon32x32: "/favicon-32x32.png"
-    apple_touch_icon: "/apple-touch-icon.png"
-    safari_pinned_tab: "/safari-pinned-tab.svg"
 
   label:
     text: "XU's Blog"
-    icon: /favicon.ico
-    iconHeight: 35
 
   # 首页：使用 profileMode（与 lilianweng 风格一致：作者简介 + 文章列表）
   homeInfoParams:
@@ -73,11 +66,6 @@ params:
       and whatever else catches my attention along the way.
 
       Most posts are long-form deep dives — written for myself first, shared in case they help others.
-
-  editPost:
-    URL: "https://github.com/xuxincheng/xuxincheng.github.io/tree/main/content"
-    Text: "Suggest Changes"
-    appendFilePath: true
 
 # 菜单：Posts / Tags / Categories
 menu:
