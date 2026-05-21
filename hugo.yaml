@@ -82,6 +82,10 @@ params:
 # 菜单：Posts / Tags / Categories
 menu:
   main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: 5
     - identifier: archive
       name: Archive
       url: /archive/
