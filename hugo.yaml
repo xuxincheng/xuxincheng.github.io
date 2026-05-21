@@ -90,6 +90,10 @@ menu:
       name: Tags
       url: /tags/
       weight: 20
+    - identifier: about
+      name: About Me
+      url: /about/
+      weight: 30
 
 # 代码高亮配置
 markup:
